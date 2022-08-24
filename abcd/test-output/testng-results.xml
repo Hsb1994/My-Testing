@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-23T08:53:07 IST" name="Hybrid Testing" finished-at="2022-08-23T08:53:44 IST" duration-ms="37335">
+    <groups>
+      <group name="smoke">
+        <method signature="Login_Page_Test.test1()[pri:0, instance:action_tests.Login_Page_Test@614ca7df]" name="test1" class="action_tests.Login_Page_Test"/>
+        <method signature="Tab_Handle_Test.new_tab()[pri:0, instance:action_tests.Tab_Handle_Test@1151e434]" name="new_tab" class="action_tests.Tab_Handle_Test"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-08-23T08:53:07 IST" name="Google Gmail Test" finished-at="2022-08-23T08:53:17 IST" duration-ms="9725">
+      <class name="action_tests.Login_Page_Test">
+        <test-method is-config="true" signature="before_test()[pri:0, instance:action_tests.Login_Page_Test@614ca7df]" started-at="2022-08-23T08:53:07 IST" name="before_test" finished-at="2022-08-23T08:53:16 IST" duration-ms="9562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_test -->
+        <test-method signature="test1()[pri:0, instance:action_tests.Login_Page_Test@614ca7df]" started-at="2022-08-23T08:53:17 IST" name="test1" finished-at="2022-08-23T08:53:17 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- action_tests.Login_Page_Test -->
+    </test> <!-- Google Gmail Test -->
+    <test started-at="2022-08-23T08:53:17 IST" name="Dynamic_Button_And_BrokenImages" finished-at="2022-08-23T08:53:17 IST" duration-ms="2">
+    </test> <!-- Dynamic_Button_And_BrokenImages -->
+    <test started-at="2022-08-23T08:53:17 IST" name="Tab_Window_handling" finished-at="2022-08-23T08:53:44 IST" duration-ms="27400">
+      <class name="action_tests.Tab_Handle_Test">
+        <test-method is-config="true" signature="before()[pri:0, instance:action_tests.Tab_Handle_Test@1151e434]" started-at="2022-08-23T08:53:17 IST" name="before" finished-at="2022-08-23T08:53:28 IST" duration-ms="11373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="new_tab()[pri:0, instance:action_tests.Tab_Handle_Test@1151e434]" started-at="2022-08-23T08:53:28 IST" name="new_tab" finished-at="2022-08-23T08:53:44 IST" duration-ms="16010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- new_tab -->
+      </class> <!-- action_tests.Tab_Handle_Test -->
+    </test> <!-- Tab_Window_handling -->
+  </suite> <!-- Hybrid Testing -->
+</testng-results>

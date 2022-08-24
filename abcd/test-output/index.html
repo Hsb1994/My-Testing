@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Hybrid_Testing" class="navigator-link">
+              <span class="suite-name border-passed">Hybrid Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Hybrid_Testing" class="navigator-link ">
+                    <span>C:\Users\bisht\eclipse-workspace\abcd\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Hybrid_Testing" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Hybrid_Testing" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Hybrid_Testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Hybrid_Testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Hybrid_Testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Hybrid_Testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Hybrid_Testing" class="hide-methods passed suite-Hybrid_Testing"> (hide)</a> <!-- hide-methods passed suite-Hybrid_Testing -->
+                      <a href="#" panel-name="suite-Hybrid_Testing" class="show-methods passed suite-Hybrid_Testing"> (show)</a> <!-- show-methods passed suite-Hybrid_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Hybrid_Testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hybrid_Testing" title="action_tests.Tab_Handle_Test" class="method navigator-link" hash-for-method="new_tab">new_tab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hybrid_Testing" title="action_tests.Login_Page_Test" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Hybrid_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Hybrid_Testing" class="panel Hybrid_Testing">
+          <div class="suite-Hybrid_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">action_tests.Login_Page_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrid_Testing-class-passed -->
+          <div class="suite-Hybrid_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">action_tests.Tab_Handle_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="new_tab">
+                  </a> <!-- new_tab -->
+                  <span class="method-name">new_tab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrid_Testing-class-passed -->
+        </div> <!-- panel Hybrid_Testing -->
+        <div panel-name="test-xml-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\bisht\eclipse-workspace\abcd\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Hybrid Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Google Gmail Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;action_tests.Login_Page_Test&quot;/&gt;
+      &lt;class name=&quot;action_tests.SignIn_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Google Gmail Test --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Dynamic_Button_And_BrokenImages&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;action_tests.DynaButton_Image_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Dynamic_Button_And_BrokenImages --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Tab_Window_handling&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;action_tests.Tab_Handle_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tab_Window_handling --&gt;
+&lt;/suite&gt; &lt;!-- Hybrid Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Hybrid Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Google Gmail Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Dynamic_Button_And_BrokenImages (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tab_Window_handling (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Hybrid Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">new_tab</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Hybrid Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Hybrid_Testing');
+function tableData_Hybrid_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'new_tab')
+data.setCell(0, 2, 'action_tests.Tab_Handle_Test')
+data.setCell(0, 3, 16010);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'action_tests.Login_Page_Test')
+data.setCell(1, 3, 30);
+window.suiteTableData['Hybrid_Testing']= { tableData: data, tableDiv: 'times-div-Hybrid_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-Hybrid_Testing">
+              </div> <!-- times-div-Hybrid_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Hybrid Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">action_tests.DynaButton_Image_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">broken_image</span>
+                <br/>
+                <span class="ignored-method-name">check_dynamic</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">action_tests.Tab_Handle_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">check_win_msg</span>
+                <br/>
+                <span class="ignored-method-name">new_win</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">action_tests.SignIn_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test_forgot</span>
+                <br/>
+                <span class="ignored-method-name">test_signIn</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Hybrid_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">action_tests.Login_Page_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before_test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">9656 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">action_tests.Tab_Handle_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">9933 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">new_tab</span>
+                <span class="method-start">21309 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
