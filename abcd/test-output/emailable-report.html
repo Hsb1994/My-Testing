@@ -8,17 +8,54 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Hybrid Testing</th></tr>
-<tr><td><a href="#t0">Google Gmail Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,725</td><td>smoke</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Dynamic_Button_And_BrokenImages</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2</td><td>smoke</td><td></td></tr>
-<tr><td><a href="#t2">Tab_Window_handling</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,400</td><td>smoke</td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">37,127</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,719</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hybrid Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Google Gmail Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">action_tests.Login_Page_Test</td><td><a href="#m0">test1</a></td><td rowspan="1">1661224997086</td><td rowspan="1">30</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Tab_Window_handling &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">action_tests.Tab_Handle_Test</td><td><a href="#m1">new_tab</a></td><td rowspan="1">1661225008739</td><td rowspan="1">16010</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">action_tests.Login_Page_Test</td><td><a href="#m0">test3</a></td><td rowspan="1">1661926513267</td><td rowspan="1">10</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">action_tests.Login_Page_Test</td><td><a href="#m1">test1</a></td><td rowspan="1">1661926513137</td><td rowspan="1">29</td></tr><tr class="passedeven"><td><a href="#m2">test2</a></td><td rowspan="2">1661926513207</td><td rowspan="2">17</td></tr><tr class="passedeven"><td><a href="#m3">test2</a></td></tr><tr class="passedeven"><td><a href="#m4">test3</a></td><td rowspan="1">1661926513229</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m5">test4</a></td><td rowspan="3">1661926513294</td><td rowspan="3">13</td></tr><tr class="passedeven"><td><a href="#m6">test4</a></td></tr><tr class="passedeven"><td><a href="#m7">test4</a></td></tr></tbody>
 </table>
-<h2>Google Gmail Test</h2><h3 id="m0">action_tests.Login_Page_Test#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Dynamic_Button_And_BrokenImages</h2><h2>Tab_Window_handling</h2><h3 id="m1">action_tests.Tab_Handle_Test#new_tab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">action_tests.Login_Page_Test#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>2</td><td>3</td><td>6</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: expected [5] but found [6]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at action_tests.Login_Page_Test.test3(Login_Page_Test.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">action_tests.Login_Page_Test#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">action_tests.Login_Page_Test#test2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Singh</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">action_tests.Login_Page_Test#test2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Hemant</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">action_tests.Login_Page_Test#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>2</td><td>3</td><td>5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">action_tests.Login_Page_Test#test4</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>H</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">action_tests.Login_Page_Test#test4</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>S</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">action_tests.Login_Page_Test#test4</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>B</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -9,7 +9,7 @@ public class Tab_Handle_Test  extends Base_Library1 {
 
 	Tab_Handle ob;
 	
-	@BeforeTest(groups = "smoke")
+	@BeforeTest(groups = {"smoke"})
 	public void before() {
 		launch_Url("https://testingbaba.com/old/index.html");
 		ob = new Tab_Handle();
