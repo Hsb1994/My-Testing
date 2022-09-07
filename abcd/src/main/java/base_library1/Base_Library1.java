@@ -1,13 +1,9 @@
 package base_library1;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-
-import bsh.Capabilities;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_Library1 {
 	
