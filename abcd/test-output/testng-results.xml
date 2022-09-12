@@ -1,97 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-31T11:44:59 IST" name="Default suite" finished-at="2022-08-31T11:45:13 IST" duration-ms="14719">
+  <suite started-at="2022-09-11T10:01:23 IST" name="Default suite" finished-at="2022-09-11T10:01:23 IST" duration-ms="182">
     <groups>
-      <group name="smoke">
-        <method signature="Login_Page_Test.test1()[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" name="test1" class="action_tests.Login_Page_Test"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-08-31T11:44:59 IST" name="Default test" finished-at="2022-08-31T11:45:13 IST" duration-ms="14719">
-      <class name="action_tests.Login_Page_Test">
-        <test-method is-config="true" signature="before_test()[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:44:59 IST" name="before_test" finished-at="2022-08-31T11:45:13 IST" duration-ms="13783" status="PASS">
+    <test started-at="2022-09-11T10:01:23 IST" name="Default test" finished-at="2022-09-11T10:01:23 IST" duration-ms="182">
+      <class name="action_tests.Rest_Assured_Test">
+        <test-method is-config="true" signature="before()[pri:0, instance:action_tests.Rest_Assured_Test@636be97c]" started-at="2022-09-11T10:01:23 IST" name="before" finished-at="2022-09-11T10:01:23 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before_test -->
-        <test-method signature="test1()[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test1" finished-at="2022-08-31T11:45:13 IST" duration-ms="29" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2(java.lang.String)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test2" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hemant]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test2(java.lang.String)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test2" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Singh]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3(int,int,int)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test3" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test3(int,int,int)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test3" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="10" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- before -->
+        <test-method signature="check_Rest()[pri:0, instance:action_tests.Rest_Assured_Test@636be97c]" started-at="2022-09-11T10:01:23 IST" name="check_Rest" finished-at="2022-09-11T10:01:23 IST" duration-ms="30" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[expected [5] but found [6]]]>
+              <![CDATA[groovy/lang/GroovyObject]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [5] but found [6]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at org.testng.Assert.assertEquals(Assert.java:917)
-at action_tests.Login_Page_Test.test3(Login_Page_Test.java:53)
+              <![CDATA[java.lang.NoClassDefFoundError: groovy/lang/GroovyObject
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at io.restassured.RestAssured.<clinit>(RestAssured.java:355)
+at action_pages.Rest_Assured_Page.check_restapi(Rest_Assured_Page.java:12)
+at action_tests.Rest_Assured_Test.check_Rest(Rest_Assured_Test.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,50 +58,18 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: groovy.lang.GroovyObject
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 40 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test4(char)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test4" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[H]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method signature="test4(char)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test4" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[S]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method signature="test4(char)[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="test4" data-provider="dp" finished-at="2022-08-31T11:45:13 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method is-config="true" signature="close()[pri:0, instance:action_tests.Login_Page_Test@156b88f5]" started-at="2022-08-31T11:45:13 IST" name="close" finished-at="2022-08-31T11:45:13 IST" duration-ms="600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- action_tests.Login_Page_Test -->
+        </test-method> <!-- check_Rest -->
+      </class> <!-- action_tests.Rest_Assured_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

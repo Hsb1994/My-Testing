@@ -20,10 +20,13 @@ public class Base_Library1 {
 		
 	}
 
-	@AfterTest	
-	public void close() {
-	driver.quit();
-	}
+//	@AfterTest	
+//	public void close() {
+//	driver.quit();
+//	}
+
+
+
 }
 
 

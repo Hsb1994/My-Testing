@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Hybrid Testing" configfailurepolicy="skip" >
+<suite name="Hybrid Testing" thread-count="2" configfailurepolicy="skip" parallel="tests">
 
-<groups>
+<!-- <groups>
 <run>
 <include   name="smoke">    </include>
 </run>
 </groups>
-
-  <test thread-count="2" name="Google Gmail Test"  >
+ -->
+ 
+  <test thread-count="1" name="Google Gmail Test"  >
     <classes>
       <class name="action_tests.Login_Page_Test"/>
       <class name="action_tests.SignIn_Test"/>
     </classes>
   </test> <!-- Test -->
 
-  <test thread-count="2" name="Rediff SignUp Test" enabled = "false">
+  <test thread-count="1" name="Rediff SignUp Test" >
     <classes>
       <class name="action_tests.Rediff_SignUp_Test"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="2" name="Dynamic_Button_And_BrokenImages">
+  <test thread-count="2" name="Dynamic_Button_And_BrokenImages" enabled="false">
     <classes>
       <class name="action_tests.DynaButton_Image_Test"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="2" name="Tab_Window_handling">
+  <test thread-count="2" name="Tab_Window_handling" enabled="false">
     <classes>
       <class name="action_tests.Tab_Handle_Test"/>
     </classes>

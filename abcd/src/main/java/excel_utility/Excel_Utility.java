@@ -1,6 +1,7 @@
 package excel_utility;
-
 import java.io.FileInputStream;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -14,7 +15,20 @@ public class Excel_Utility {
 		FileInputStream	fis = new FileInputStream(path);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheetAt(sheetNo);
-		value = sheet.getRow(row).getCell(col).getStringCellValue();
+		
+		if(sheet.getRow(row).getCell(col).getCellType() == CellType.STRING) {
+			value = sheet.getRow(row).getCell(col).getStringCellValue();
+		}
+		
+		else if(sheet.getRow(row).getCell(col).getCellType() == CellType.NUMERIC) {
+			double number = sheet.getRow(row).getCell(col).getNumericCellValue();
+			value = NumberToTextConverter.toText(number);
+		}
+
+		else if(sheet.getRow(row).getCell(col).getCellType() == CellType.FORMULA) {
+			double number = sheet.getRow(row).getCell(col).getNumericCellValue();
+			value = NumberToTextConverter.toText(number);
+		}
 		
 		} catch (Exception e) {
 			e.printStackTrace();
