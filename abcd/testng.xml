@@ -8,27 +8,30 @@
 </run>
 </groups>
  -->
+
+<parameter name="val" value="google"></parameter>
+ <parameter name="browser" value="mozzila"></parameter>
  
-  <test thread-count="1" name="Google Gmail Test"  >
+  <test name="Google Gmail Test"  >
     <classes>
-      <class name="action_tests.Login_Page_Test"/>
+ <!--      <class name="action_tests.Login_Page_Test"/> -->
       <class name="action_tests.SignIn_Test"/>
     </classes>
   </test> <!-- Test -->
 
-  <test thread-count="1" name="Rediff SignUp Test" >
+  <test name="Rediff SignUp Test" enabled="false">
     <classes>
       <class name="action_tests.Rediff_SignUp_Test"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="2" name="Dynamic_Button_And_BrokenImages" enabled="false">
+  <test name="Dynamic_Button_And_BrokenImages" enabled="false">
     <classes>
       <class name="action_tests.DynaButton_Image_Test"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="2" name="Tab_Window_handling" enabled="false">
+  <test name="Tab_Window_handling" enabled="false">
     <classes>
       <class name="action_tests.Tab_Handle_Test"/>
     </classes>
