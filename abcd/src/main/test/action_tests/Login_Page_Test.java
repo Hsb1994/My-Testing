@@ -44,7 +44,7 @@ public class Login_Page_Test extends Base_Library1 {
 		
 	}
 	
-	@Test(dataProvider = "dp")
+	@Test(dataProvider = "dp", dataProviderClass = Login_Page_Test.class)
 	public void test2 (String s) {
 		System.out.println(s);
 	}

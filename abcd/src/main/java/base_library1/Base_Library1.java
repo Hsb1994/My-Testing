@@ -21,7 +21,7 @@ public class Base_Library1 {
 			driver.manage().window().maximize();	
 			break;
 		case "mozzila":
-			System.setProperty("webdriver.gecko.driver", ".\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver", ".\\Drivers\\firefoxdriver.exe");
 //			WebDriverManager.chromedriver().setup();
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

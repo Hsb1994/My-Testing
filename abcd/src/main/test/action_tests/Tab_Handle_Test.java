@@ -17,7 +17,7 @@ public class Tab_Handle_Test  extends Base_Library1 {
 		ob = new Tab_Handle();
 	}
 	
-	@Test(groups = "smoke")
+	@Test(groups = {"smoke"})
 	public void new_tab() {
 		ob.new_tab();
 	}

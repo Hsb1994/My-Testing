@@ -9,12 +9,12 @@
 </groups>
  -->
 
-<parameter name="val" value="google"></parameter>
- <parameter name="browser" value="mozzila"></parameter>
+<parameter name="val" value="google.com"></parameter>
+ <parameter name="browser" value="chrome"></parameter>
  
   <test name="Google Gmail Test"  >
     <classes>
- <!--      <class name="action_tests.Login_Page_Test"/> -->
+<!--        <class name="action_tests.Login_Page_Test"/>  -->
       <class name="action_tests.SignIn_Test"/>
     </classes>
   </test> <!-- Test -->
