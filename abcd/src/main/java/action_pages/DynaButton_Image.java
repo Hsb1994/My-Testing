@@ -4,6 +4,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -54,7 +55,7 @@ public class DynaButton_Image extends Base_Library1 {
 		}
 		
 		String color = color_change.getCssValue("color");
-		String hex_code = org.openqa.selenium.support.Color.fromString(color).asHex();
+		String hex_code = Color.fromString(color).asHex();
 		System.out.println(color);
 		System.out.println(hex_code);
 		
