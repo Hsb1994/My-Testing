@@ -6,7 +6,7 @@
       <class name="action_tests.Login_Page_Test">
         <methods>
           <include name="close"/>
-          <include name="before_test"/>
+          <include name="test1"/>
           <include name="test3" invocation-numbers="1"/>
         </methods>
       </class> <!-- action_tests.Login_Page_Test -->

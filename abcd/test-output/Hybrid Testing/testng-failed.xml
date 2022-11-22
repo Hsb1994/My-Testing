@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Hybrid Testing]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Tab_Window_handling(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+<suite thread-count="2" parallel="tests" name="Failed suite [Hybrid Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="val" value="google"/>
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="2" parallel="tests" name="Google Gmail Test(failed)">
     <classes>
-      <class name="action_tests.Tab_Handle_Test">
+      <class name="action_tests.SignIn_Test">
         <methods>
-          <include name="new_tab"/>
+          <include name="close"/>
+          <include name="before"/>
+          <include name="test_signIn"/>
         </methods>
-      </class> <!-- action_tests.Tab_Handle_Test -->
+      </class> <!-- action_tests.SignIn_Test -->
     </classes>
-  </test> <!-- Tab_Window_handling(failed) -->
+  </test> <!-- Google Gmail Test(failed) -->
 </suite> <!-- Failed suite [Hybrid Testing] -->
